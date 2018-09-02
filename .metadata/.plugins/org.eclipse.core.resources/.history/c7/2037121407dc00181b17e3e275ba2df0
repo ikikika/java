@@ -40,7 +40,7 @@ public class calculator {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 270, 342);
+		frame.setBounds(100, 100, 270, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
@@ -94,43 +94,22 @@ public class calculator {
 		//-----------------Row 3 --------------------------
 		JButton btn1 = new JButton("1");
 		btn1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btn1.setBounds(10, 180, 50, 50);
+		btn1.setBounds(10, 124, 50, 50);
 		frame.getContentPane().add(btn1);
 		
 		JButton btn2 = new JButton("2");
 		btn2.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btn2.setBounds(70, 180, 50, 50);
+		btn2.setBounds(70, 124, 50, 50);
 		frame.getContentPane().add(btn2);
 		
 		JButton btn3 = new JButton("3");
 		btn3.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btn3.setBounds(130, 180, 50, 50);
+		btn3.setBounds(130, 124, 50, 50);
 		frame.getContentPane().add(btn3);
 		
-		JButton btnTimes = new JButton("*");
-		btnTimes.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btnTimes.setBounds(190, 180, 50, 50);
-		frame.getContentPane().add(btnTimes);
-		
-		//-----------------Row 4 --------------------------
-		JButton btnDot = new JButton(".");
-		btnDot.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btnDot.setBounds(10, 240, 50, 50);
-		frame.getContentPane().add(btnDot);
-		
-		JButton btn0 = new JButton("0");
-		btn0.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btn0.setBounds(70, 240, 50, 50);
-		frame.getContentPane().add(btn0);
-		
-		JButton btnEqual = new JButton("=");
-		btnEqual.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btnEqual.setBounds(130, 240, 50, 50);
-		frame.getContentPane().add(btnEqual);
-		
-		JButton btnDivide = new JButton("/");
-		btnDivide.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btnDivide.setBounds(190, 240, 50, 50);
-		frame.getContentPane().add(btnDivide);
+		JButton btnMinus = new JButton("-");
+		btnMinus.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		btnMinus.setBounds(190, 124, 50, 50);
+		frame.getContentPane().add(btnMinus);
 	}
 }

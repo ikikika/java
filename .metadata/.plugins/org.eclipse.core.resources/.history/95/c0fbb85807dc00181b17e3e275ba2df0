@@ -40,7 +40,7 @@ public class calculator {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 270, 342);
+		frame.setBounds(100, 100, 270, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
@@ -111,26 +111,5 @@ public class calculator {
 		btnTimes.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		btnTimes.setBounds(190, 180, 50, 50);
 		frame.getContentPane().add(btnTimes);
-		
-		//-----------------Row 4 --------------------------
-		JButton btnDot = new JButton(".");
-		btnDot.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btnDot.setBounds(10, 240, 50, 50);
-		frame.getContentPane().add(btnDot);
-		
-		JButton btn0 = new JButton("0");
-		btn0.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btn0.setBounds(70, 240, 50, 50);
-		frame.getContentPane().add(btn0);
-		
-		JButton btnEqual = new JButton("=");
-		btnEqual.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btnEqual.setBounds(130, 240, 50, 50);
-		frame.getContentPane().add(btnEqual);
-		
-		JButton btnDivide = new JButton("/");
-		btnDivide.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btnDivide.setBounds(190, 240, 50, 50);
-		frame.getContentPane().add(btnDivide);
 	}
 }

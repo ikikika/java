@@ -98,12 +98,6 @@ public class calculator {
 		frame.getContentPane().add(btn8);
 		
 		JButton btn9 = new JButton("9");
-		btn9.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				String EnterNumber = txtDisplay.getText() + btn9.getText();
-				txtDisplay.setText(EnterNumber);
-			}
-		});
 		btn9.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		btn9.setBounds(130, 120, 50, 50);
 		frame.getContentPane().add(btn9);
@@ -115,34 +109,16 @@ public class calculator {
 		
 		//-----------------Row 3 --------------------------
 		JButton btn4 = new JButton("4");
-		btn4.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				String EnterNumber = txtDisplay.getText() + btn4.getText();
-				txtDisplay.setText(EnterNumber);
-			}
-		});
 		btn4.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		btn4.setBounds(10, 180, 50, 50);
 		frame.getContentPane().add(btn4);
 		
 		JButton btn5 = new JButton("5");
-		btn5.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				String EnterNumber = txtDisplay.getText() + btn5.getText();
-				txtDisplay.setText(EnterNumber);
-			}
-		});
 		btn5.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		btn5.setBounds(70, 180, 50, 50);
 		frame.getContentPane().add(btn5);
 		
 		JButton btn6 = new JButton("6");
-		btn6.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				String EnterNumber = txtDisplay.getText() + btn6.getText();
-				txtDisplay.setText(EnterNumber);
-			}
-		});
 		btn6.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		btn6.setBounds(130, 180, 50, 50);
 		frame.getContentPane().add(btn6);
@@ -154,34 +130,16 @@ public class calculator {
 		
 		//-----------------Row 4 --------------------------
 		JButton btn1 = new JButton("1");
-		btn1.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				String EnterNumber = txtDisplay.getText() + btn1.getText();
-				txtDisplay.setText(EnterNumber);
-			}
-		});
 		btn1.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		btn1.setBounds(10, 240, 50, 50);
 		frame.getContentPane().add(btn1);
 		
 		JButton btn2 = new JButton("2");
-		btn2.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				String EnterNumber = txtDisplay.getText() + btn2.getText();
-				txtDisplay.setText(EnterNumber);
-			}
-		});
 		btn2.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		btn2.setBounds(70, 240, 50, 50);
 		frame.getContentPane().add(btn2);
 		
 		JButton btn3 = new JButton("3");
-		btn3.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				String EnterNumber = txtDisplay.getText() + btn3.getText();
-				txtDisplay.setText(EnterNumber);
-			}
-		});
 		btn3.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		btn3.setBounds(130, 240, 50, 50);
 		frame.getContentPane().add(btn3);
@@ -198,12 +156,6 @@ public class calculator {
 		frame.getContentPane().add(btnDot);
 		
 		JButton btn0 = new JButton("0");
-		btn0.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				String EnterNumber = txtDisplay.getText() + btn0.getText();
-				txtDisplay.setText(EnterNumber);
-			}
-		});
 		btn0.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		btn0.setBounds(70, 300, 50, 50);
 		frame.getContentPane().add(btn0);

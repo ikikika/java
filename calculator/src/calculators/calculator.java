@@ -6,11 +6,14 @@ import javax.swing.JFrame;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.Font;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.SwingConstants;
 
 public class calculator {
 
 	private JFrame frame;
-	private JTextField textField;
+	private JTextField txtDisplay;
 
 	/**
 	 * Launch the application.
@@ -40,14 +43,15 @@ public class calculator {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 268, 430);
+		frame.setBounds(100, 100, 268, 401);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		textField = new JTextField();
-		textField.setBounds(10, 11, 230, 41);
-		frame.getContentPane().add(textField);
-		textField.setColumns(10);
+		txtDisplay = new JTextField();
+		txtDisplay.setHorizontalAlignment(SwingConstants.RIGHT);
+		txtDisplay.setBounds(10, 11, 230, 41);
+		frame.getContentPane().add(txtDisplay);
+		txtDisplay.setColumns(10);
 		
 		//---------------------Row 1 ---------------------------
 		JButton btnDel = new JButton("del");
@@ -72,6 +76,12 @@ public class calculator {
 		
 		//---------------------Row 2 ---------------------------
 		JButton btn7 = new JButton("7");
+		btn7.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String EnterNumber = txtDisplay.getText() + btn7.getText();
+				txtDisplay.setText(EnterNumber);
+			}
+		}); 
 		btn7.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		btn7.setBounds(10, 120, 50, 50);
 		frame.getContentPane().add(btn7);

@@ -257,7 +257,7 @@ public class calculator {
 		JButton btnPM = new JButton("+-");
 		btnPM.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				double ops = Double.parseDouble(String.valueOf(txtDisplay.getText()));
+				double ops = Double.parseDouble(String.valueOf(objtxtDisplay.getText()));
 				ops = ops * (-1);
 				txtDisplay.setText(String.valueOf(ops));
 			}

@@ -17,9 +17,6 @@ public class calculator {
 
 	double firstNum;
 	double secondNum;
-	double result;
-	String operation;
-	String answer;
 	
 	/**
 	 * Launch the application.
@@ -76,25 +73,11 @@ public class calculator {
 		frame.getContentPane().add(btnClear);
 		
 		JButton btnPercent = new JButton("%");
-		btnPercent.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				firstNum = Double.parseDouble(txtDisplay.getText());
-				txtDisplay.setText("");
-				operation = "%";
-			}
-		});
 		btnPercent.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		btnPercent.setBounds(130, 60, 50, 50);
 		frame.getContentPane().add(btnPercent);
 		
 		JButton btnPlus = new JButton("+");
-		btnPlus.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				firstNum = Double.parseDouble(txtDisplay.getText());
-				txtDisplay.setText("");
-				operation = "+";
-			}
-		});
 		btnPlus.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		btnPlus.setBounds(190, 60, 50, 50);
 		frame.getContentPane().add(btnPlus);
@@ -134,13 +117,6 @@ public class calculator {
 		frame.getContentPane().add(btn9);
 		
 		JButton btnMinus = new JButton("-");
-		btnMinus.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				firstNum = Double.parseDouble(txtDisplay.getText());
-				txtDisplay.setText("");
-				operation = "-";
-			}
-		});
 		btnMinus.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		btnMinus.setBounds(190, 120, 50, 50);
 		frame.getContentPane().add(btnMinus);
@@ -180,13 +156,6 @@ public class calculator {
 		frame.getContentPane().add(btn6);
 		
 		JButton btnTimes = new JButton("*");
-		btnTimes.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				firstNum = Double.parseDouble(txtDisplay.getText());
-				txtDisplay.setText("");
-				operation = "*";
-			}
-		});
 		btnTimes.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		btnTimes.setBounds(190, 180, 50, 50);
 		frame.getContentPane().add(btnTimes);
@@ -226,13 +195,6 @@ public class calculator {
 		frame.getContentPane().add(btn3);
 		
 		JButton btnDivide = new JButton("/");
-		btnDivide.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				firstNum = Double.parseDouble(txtDisplay.getText());
-				txtDisplay.setText("");
-				operation = "/";
-			}
-		});
 		btnDivide.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		btnDivide.setBounds(190, 240, 50, 50);
 		frame.getContentPane().add(btnDivide);
@@ -255,13 +217,6 @@ public class calculator {
 		frame.getContentPane().add(btn0);
 		
 		JButton btnPM = new JButton("+-");
-		btnPM.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				double ops = Double.parseDouble(String.valueOf(txtDisplay.getText()));
-				ops = ops * (-1);
-				txtDisplay.setText(String.valueOf(ops));
-			}
-		});
 		btnPM.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		btnPM.setBounds(130, 300, 50, 50);
 		frame.getContentPane().add(btnPM);

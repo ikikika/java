@@ -76,13 +76,6 @@ public class calculator {
 		frame.getContentPane().add(btnClear);
 		
 		JButton btnPercent = new JButton("%");
-		btnPercent.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				firstNum = Double.parseDouble(txtDisplay.getText());
-				txtDisplay.setText("");
-				operation = "%";
-			}
-		});
 		btnPercent.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		btnPercent.setBounds(130, 60, 50, 50);
 		frame.getContentPane().add(btnPercent);
@@ -255,13 +248,6 @@ public class calculator {
 		frame.getContentPane().add(btn0);
 		
 		JButton btnPM = new JButton("+-");
-		btnPM.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				double ops = Double.parseDouble(String.valueOf(txtDisplay.getText()));
-				ops = ops * (-1);
-				txtDisplay.setText(String.valueOf(ops));
-			}
-		});
 		btnPM.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		btnPM.setBounds(130, 300, 50, 50);
 		frame.getContentPane().add(btnPM);

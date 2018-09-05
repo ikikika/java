@@ -60,11 +60,6 @@ public class calculator {
 		frame.getContentPane().add(btnDel);
 		
 		JButton btnClear = new JButton("C");
-		btnClear.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				txtDisplay.setText(null);
-			}
-		});
 		btnClear.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		btnClear.setBounds(70, 60, 50, 50);
 		frame.getContentPane().add(btnClear);

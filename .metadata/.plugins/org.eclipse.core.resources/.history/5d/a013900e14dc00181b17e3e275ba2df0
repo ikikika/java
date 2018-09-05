@@ -62,7 +62,7 @@ public class calculator {
 		JButton btnClear = new JButton("C");
 		btnClear.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				txtDisplay.setText(null);
+				txtDisplay.setText(EnterNumber);
 			}
 		});
 		btnClear.setFont(new Font("Tahoma", Font.PLAIN, 16));

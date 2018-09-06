@@ -67,9 +67,6 @@ public class calculator {
 				
 				if( txtDisplay.getText().length() > 0 ) {
 					StringBuilder strB = new StringBuilder(txtDisplay.getText());
-					strB.deleteCharAt(txtDisplay.getText().length() -1 );
-					backspace = strB.toString();
-					txtDisplay.setText(backspace);
 				}
 			}
 		});

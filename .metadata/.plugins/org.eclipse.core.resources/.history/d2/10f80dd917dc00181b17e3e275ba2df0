@@ -305,8 +305,8 @@ public class calculator {
 		                answer = String.format("%.2f", result);
 		                txtDisplay.setText(answer);
 		                break;  
-		            case "%":
-		                result = firstNum % secondNum;
+		            case "/":
+		                result = firstNum / secondNum;
 		                answer = String.format("%.2f", result);
 		                txtDisplay.setText(answer);
 		                break;  

@@ -282,31 +282,7 @@ public class calculator {
 		btnEqual.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				String answer;
-				secondNum = Double.parseDouble(txtDisplay.getText());
-				switch(operation)
-		        {
-		            case "+":
-		                result = firstNum + secondNum;
-		                answer = String.format("%.2f", result);
-		                txtDisplay.setText(answer);
-		                break;
-//		            case '-':
-//		                result = first - second;
-//		                break;
-//
-//		            case '*':
-//		                result = first * second;
-//		                break;
-//
-//		            case '/':
-//		                result = first / second;
-//		                break;
-//
-//		            // operator doesn't match any case constant (+, -, *, /)
-//		            default:
-//		                System.out.printf("Error! operator is not correct");
-//		                return;
-		        }
+				secondNum = Double.parseDouble(txtDisplay.getText())
 			}
 		});
 		btnEqual.setFont(new Font("Tahoma", Font.PLAIN, 16));

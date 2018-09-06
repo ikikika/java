@@ -283,29 +283,29 @@ public class calculator {
 			public void actionPerformed(ActionEvent e) {
 				String answer;
 				secondNum = Double.parseDouble(txtDisplay.getText());
-				switch(operation)
+				switch(operator)
 		        {
-		            case "+":
+		            case '+':
 		                result = firstNum + secondNum;
 		                answer = String.format("%.2f", result);
-		                txtDisplay.setText(answer);
 		                break;
-//		            case '-':
-//		                result = first - second;
-//		                break;
-//
-//		            case '*':
-//		                result = first * second;
-//		                break;
-//
-//		            case '/':
-//		                result = first / second;
-//		                break;
-//
-//		            // operator doesn't match any case constant (+, -, *, /)
-//		            default:
-//		                System.out.printf("Error! operator is not correct");
-//		                return;
+
+		            case '-':
+		                result = first - second;
+		                break;
+
+		            case '*':
+		                result = first * second;
+		                break;
+
+		            case '/':
+		                result = first / second;
+		                break;
+
+		            // operator doesn't match any case constant (+, -, *, /)
+		            default:
+		                System.out.printf("Error! operator is not correct");
+		                return;
 		        }
 			}
 		});

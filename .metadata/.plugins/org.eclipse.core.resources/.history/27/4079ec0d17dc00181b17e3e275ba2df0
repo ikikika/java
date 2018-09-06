@@ -279,36 +279,6 @@ public class calculator {
 		frame.getContentPane().add(btnPM);
 		
 		JButton btnEqual = new JButton("=");
-		btnEqual.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				String answer;
-				secondNum = Double.parseDouble(txtDisplay.getText());
-				switch(operation)
-		        {
-		            case "+":
-		                result = firstNum + secondNum;
-		                answer = String.format("%.2f", result);
-		                txtDisplay.setText(answer);
-		                break;
-//		            case '-':
-//		                result = first - second;
-//		                break;
-//
-//		            case '*':
-//		                result = first * second;
-//		                break;
-//
-//		            case '/':
-//		                result = first / second;
-//		                break;
-//
-//		            // operator doesn't match any case constant (+, -, *, /)
-//		            default:
-//		                System.out.printf("Error! operator is not correct");
-//		                return;
-		        }
-			}
-		});
 		btnEqual.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		btnEqual.setBounds(190, 300, 50, 50);
 		frame.getContentPane().add(btnEqual);
